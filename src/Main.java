@@ -45,7 +45,7 @@ public class Main {
                     }
                     int buggerSelect = in.nextInt();
                     switch (buggerSelect) {
-                        case 1:
+                        case 1 : case 2 : case 3 : case 4 : case 5 :
                             System.out.println(
                                     "\n" + "\"" +
                                             product.buggersInfo[buggerSelect - 1] + "\"" +
@@ -77,134 +77,6 @@ public class Main {
                                     break;
                             }
                             break;
-                        case 2 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.buggersInfo[buggerSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    buggerArr = product.buggersInfo[buggerSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.buggersMenu.add(
-                                            product.buggersInfo[buggerSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.buggersInfo[buggerSelect-1].substring(0, buggerArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 3 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.buggersInfo[buggerSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    buggerArr = product.buggersInfo[buggerSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.buggersMenu.add(
-                                            product.buggersInfo[buggerSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.buggersInfo[buggerSelect-1].substring(0, buggerArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 4 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.buggersInfo[buggerSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    buggerArr = product.buggersInfo[buggerSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.buggersMenu.add(
-                                            product.buggersInfo[buggerSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.buggersInfo[buggerSelect-1].substring(0, buggerArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 5 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.buggersInfo[buggerSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    buggerArr = product.buggersInfo[buggerSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.buggersMenu.add(
-                                            product.buggersInfo[buggerSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.buggersInfo[buggerSelect-1].substring(0, buggerArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
                     }
                     break;
                 case 2 :
@@ -220,7 +92,7 @@ public class Main {
                     }
                     int iceCreamsSelect = in.nextInt();
                     switch (iceCreamsSelect) {
-                        case 1:
+                        case 1 : case 2 : case 3 : case 4 : case 5 :
                             System.out.println(
                                     "\n" + "\"" +
                                             product.iceCreamInfo[iceCreamsSelect - 1] + "\"" +
@@ -235,134 +107,6 @@ public class Main {
                             };
                             System.out.println();
                             int menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    iceCreamArr = product.iceCreamInfo[iceCreamsSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.iceCreamMenu.add(
-                                            product.iceCreamInfo[iceCreamsSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.iceCreamInfo[iceCreamsSelect-1].substring(0, iceCreamArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 2 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.iceCreamInfo[iceCreamsSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    iceCreamArr = product.iceCreamInfo[iceCreamsSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.iceCreamMenu.add(
-                                            product.iceCreamInfo[iceCreamsSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.iceCreamInfo[iceCreamsSelect-1].substring(0, iceCreamArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 3 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.iceCreamInfo[iceCreamsSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    iceCreamArr = product.iceCreamInfo[iceCreamsSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.iceCreamMenu.add(
-                                            product.iceCreamInfo[iceCreamsSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.iceCreamInfo[iceCreamsSelect-1].substring(0, iceCreamArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 4 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.iceCreamInfo[iceCreamsSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    iceCreamArr = product.iceCreamInfo[iceCreamsSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.iceCreamMenu.add(
-                                            product.iceCreamInfo[iceCreamsSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.iceCreamInfo[iceCreamsSelect-1].substring(0, iceCreamArr - 1)+
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 5 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.iceCreamInfo[iceCreamsSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
                             switch (menuCheckSelect) {
                                 case 1 :
                                     iceCreamArr = product.iceCreamInfo[iceCreamsSelect - 1].indexOf("|");
@@ -395,7 +139,7 @@ public class Main {
                     }
                     int coffeeSelect = in.nextInt();
                     switch (coffeeSelect) {
-                        case 1:
+                        case 1 : case 2 : case 3 : case 4 : case 5 :
                             System.out.println(
                                     "\n" + "\"" +
                                             product.coffeeInfo[coffeeSelect - 1] + "\"" +
@@ -419,134 +163,6 @@ public class Main {
                                     );
                                     System.out.println(
                                             product.coffeeInfo[coffeeSelect-1].substring(0, coffeeArr) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 2 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.coffeeInfo[coffeeSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    coffeeArr = product.coffeeInfo[coffeeSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.coffeeMenu.add(
-                                            product.coffeeInfo[coffeeSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.coffeeInfo[coffeeSelect-1].substring(0, coffeeArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 3 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.coffeeInfo[coffeeSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    coffeeArr = product.coffeeInfo[coffeeSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.coffeeMenu.add(
-                                            product.coffeeInfo[coffeeSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.coffeeInfo[coffeeSelect-1].substring(0, coffeeArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 4 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.coffeeInfo[coffeeSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    coffeeArr = product.coffeeInfo[coffeeSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.coffeeMenu.add(
-                                            product.coffeeInfo[coffeeSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.coffeeInfo[coffeeSelect-1].substring(0, coffeeArr - 1) +
-                                            "가 장바구니에 추가되었습니다.");
-                                    System.out.println();
-                                    break;
-                                case 2 :
-                                    System.out.println("\n주문이 취소 되었습니다.\n");
-                                    break;
-                            }
-                            break;
-                        case 5 :
-                            System.out.println(
-                                    "\n" + "\"" +
-                                            product.coffeeInfo[coffeeSelect - 1] + "\"" +
-                                            "\n위 메뉴를 장바구니에 추가하시겠습니까?"
-                            );
-                            for (int i = 0; i < order.menuCheck.length; i++) {
-                                System.out.print(
-                                        (i + 1) + ". " +
-                                                order.menuCheck[i] +
-                                                "       "
-                                );
-                            };
-                            System.out.println();
-                            menuCheckSelect = in.nextInt();
-                            switch (menuCheckSelect) {
-                                case 1 :
-                                    coffeeArr = product.coffeeInfo[coffeeSelect - 1].indexOf("|");
-                                    System.out.println();
-                                    order.coffeeMenu.add(
-                                            product.coffeeInfo[coffeeSelect - 1]
-                                    );
-                                    System.out.println(
-                                            product.coffeeInfo[coffeeSelect-1].substring(0, coffeeArr - 1) +
                                             "가 장바구니에 추가되었습니다.");
                                     System.out.println();
                                     break;
@@ -642,6 +258,8 @@ public class Main {
                     System.out.println("키오스크를 종료합니다.");
                     kioskRun = false;
                     break;
+                default:
+                    System.out.println("항목에 없는 번호를 선택하셨습니다.");
             }
         }
     }
